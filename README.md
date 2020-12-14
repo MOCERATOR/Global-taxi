@@ -1,2 +1,3 @@
 # Global-taxi
-Web-site for taxi
+Web-site for taxi.
+Still developing.
