@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+    
+        .chess-board { border-spacing: 0; border-collapse: collapse; }
+            .chess-board th { padding: .5em; }
+            .chess-board td { border: -1px solid; width: 4em; height: 4em; }
+            .chess-board .light { background: #F7F7F7; }
+            .chess-board .dark { background: #000; }
+        
+        
+        #orange {color:lightorange;}
+        .hr{
+             border-width: 15px 0px;
+             border-style: solid; 
+             border-color: #E6BD21; /* Параметры границы */
+  
+    padding: 10px; /* Поля вокруг текста */
+        }
+    </style>    
+
+<title> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">  
+<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css" />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<script src="js/jquery.min.js"> </script>
+<!--webfonts-->
+  <link href='//fonts.googleapis.com/css?family=PT+Mono|Abril+Fatface' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+    <script src="https://kit.fontawesome.com/2053be82a3.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+
+
+    
+</head>
+    
+    
+<body>
+	<!--start-header-->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+					     <div class="top-menu">
+							<span class="menu"> </span>
+								<ul class="cl-effect-16">
+								 <li><a href="index.html" data-hover="Главная">Главная</a></li>
+								<li><a href="clients.html" data-hover="Клиентам">Клиентам</a></li>
+								<li><a href="drivers.html" data-hover="Водителям">Водителям</a></li>
+								<li><a class="active"  href="carriers.html" data-hover="Перевозчикам">Перевозчикам</a></li>
+								<li><a href="for_business.html" data-hover="Для бизнеса">Для бизнеса</a></li>
+								<li><a href="delivery.html" data-hover="Доставка еды">Доставка еды</a></li>
+								  <div class="clearfix"></div>
+								</ul>
+							</div>
+                            
+                            
+                            
+                            
+                            
+							<!-- script-for-menu -->
+								<script>
+									$("span.menu").click(function(){
+										$(".top-menu ul").slideToggle("slow" , function(){
+										});
+									});
+								</script>
+								<!-- script-for-menu -->
+							<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!--//end-slider-->
+   <!--gallery-->
+    
+    
+	 <div class="service-section">
+         <div class="container">
+			<div class="tittle-head">
+		       
+			</div>
+            
+            
+            
+                    <div class="portfolio-bottom">
+				            <div class="gallery-one">       
+                      <a href="images/Logo_main.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						<img src="images/Logo_main.jpg" alt="" class="img-responsive zoom-img"/>
+						</a> 
+                                </div>
+                            <div class="about-top">
+                                
+                                
+                                   
+                                
+                                
+                                
+                                    <div class="col-md-5 about-top-left" >
+                                         <br/> <br/> <br/> <br/> <br/><br/><br/>
+                                        <h3 class="Izmail" ><b>Измаил</b></h3>
+                                    </div>
+                                
+                                 <div class="col-md-7 about-top-right">
+                                     <div class="hr">
+                                         <h3 class="carriers" ><b>ЗВОНИ!</b></h3>
+                                     </div>
+                                     <h1 class="big"><b>382</b></h1>
+                                      <div class ="hr">
+                                          <h3 class="free"><b>БЕСПЛАТНО</b></h3>
+                                       </div>
+                                    </div>
+      
+                            </div>
+                        <br/><br/>  <br/><br/>    <br/><br/>  
+                        <div>
+                        	<table class="chess-board">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  
+                </tr>
+                <tr>
+                    
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                     <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                   
+                </tr>
+                <tr>
+                    
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                     <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td> 
+                     <td class="dark"></td>
+                    <td class="light"></td>
+                      <td class="dark"></td> 
+                     <td class="light"></td>
+                    
+                </tr>
+         
+            </tbody>
+        </table> 
+                        </div>
+                    <br/><br/>  
+
+                        
+                        
+                           <div class="about-top">
+                                
+                                
+                                     <div class="col-md-5 about-top-left">
+                         
+                         <a href = "https://apps.apple.com/us/app/id1513177857"><img height="100%" src="images/AS_icon.jpg" class="img-responsive" alt="Тут картинка с приложенькой. На слове 'приложение' - нацеплена ссылка на загрузку. " /></a>
+                         <a href = "https://play.google.com/store/apps/details?id=com.ligataxi.izmail.global.client"><img src="images/GP_icon.jpg" class="img-responsive" alt="Тут картинка с приложенькой. На слове 'приложение' - нацеплена ссылка на загрузку. "/> </a>
+				     </div>
+					<div id="center" class="col-md-7 about-top-right" >
+                        <br/> <br/>    
+                        <h3 class="App">Приложение для вызова такси в <a href = "https://play.google.com/store/apps/details?id=com.ligataxi.izmail.global.client"><font color="#FF7300"><b> <u>Play Market</u></b></font></a> и <a href = "https://apps.apple.com/us/app/id1513177857"><font color="#FF7300"><b> <u>App Store</u></b></font></a></h3>
+                        <br/> <br/>
+					</div>
+                               
+                               
+                                
+                                
+                                
+                                    <div class="col-md-5 about-top-left" >
+                                        <h3 class ="App">Подписывайтесь на Ваше любимое такси <font color="#FF7300"><b> <u>от 20 грн</u></b></font> в Instagram и Facebook!</h3>
+                                    </div>
+                                
+                                 <div class="col-md-7 about-top-right">
+                                     <br/><br/>
+                                      <a href="https://www.facebook.com/taxi_global_izmail-117110529983039/" class="btn btn-block btn-social btn-facebook btn-lg">
+                                            <span class="fa fa-facebook"></span> Sing in with Facebook
+                                        </a>
+                                     <br/><br/>
+                                         <a href= "https://instagram.com/taxi_global_izmail?igshid=18d4v3ok1rmtr"  class="btn btn-block btn-social btn-instagram btn-lg">
+                                            <span class="fa fa-instagram"></span> Sign in with Instagram
+                                        </a>
+                                    </div>
+      
+                            </div>
+                        
+                        
+                        
+                        
+                      
+
+                    
+					</div>
+                    
+                 
+         </div>
+           
+    </div>
+    
+    
+    
+	<!--swipebox -->	
+			<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script> 
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+						 <!--start-mid-section-->
+    
+    
+    
+  <div class="mid-section">
+	    <div class="container">
+		     <div class="mid-top">
+		        <h2>Контактный номер для жалоб и предложений:</h2>
+                 <h2> <font color = "#FF0000">+38(098) 902 64 14 </font></h2>
+		     </div>
+		</div>
+	</div>
+
+
+</body>
+</html>
